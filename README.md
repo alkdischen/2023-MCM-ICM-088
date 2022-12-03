@@ -2,9 +2,9 @@
 2023美赛-088组 知识点汇总仓库
 ## 1. 资源网站
 SJTU MCM 资料库： https://anl.sjtu.edu.cn/mcm/docs/name/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C
-CANVAS ： 视频
 
----
+CANVAS MCM 课程汇总： https://oc.sjtu.edu.cn/courses
+
 
 ## 2. 软件工具
 ### 编程
@@ -15,7 +15,7 @@ CANVAS ： 视频
 2.  Pyton.PLT
 3.  Matlab.plt
 
----
+
 
 ## 3. 时间规划纲要
 
