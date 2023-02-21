@@ -1,0 +1,147 @@
+%-------这是COMAP公司发布的2023年美赛官方LaTeX模板
+%-------官方仅提供了summary页面的样式，在此基础上，我们构建一个完整的Template!
+%-------下载网站：https://www.comap.com/contests/mcm-icm
+%-------E-mail:hnuzyx@outlook.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MCM/ICM LaTeX Template %%
+%% 2023 MCM/ICM           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{xeCJK}
+\usepackage{verbatim}
+\usepackage{geometry}
+\geometry{left=1in,right=0.75in,top=1in,bottom=1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Replace ABCDEF in the next line with your chosen problem
+% and replace 1111111 with your Team Control Number
+\newcommand{\Problem}{A}
+\newcommand{\Team}{088}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{hyperref}
+
+\usepackage{newtxtext}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{lipsum}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{indentfirst}%Latex默认在\chapter和\section等章节标题首段不缩进，加入这个宏包可以解决这个问题
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{url}
+\lhead{Team \Team}
+\rhead{}
+\cfoot{}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\graphicspath{{.}}  % Place your graphic files in the same directory as your main document
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
+\thispagestyle{empty}
+\vspace*{-16ex}
+\centerline{\begin{tabular}{*3{c}}
+	\parbox[t]{0.3\linewidth}{\begin{center}\textbf{Problem Chosen}\\ \Large \textcolor{red}{\Problem}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{2023\\ MCM/ICM\\ Summary Sheet}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Team Control Number}\\ \Large \textcolor{red}{\Team}\end{center}}	\\
+	\hline
+\end{tabular}}
+%%%%%%%%%%% Begin Summary %%%%%%%%%%%
+% Enter your summary here replacing the (red) text
+% Replace the text from here ...
+\begin{center}
+%标题
+\begin{center}
+	\Huge {Art of Balance: Deal for Save and Harvest}
+	\vspace{0.4cm}
+	
+	\normalsize\textbf{Summary}
+\end{center}
+\vspace{0.2cm}
+
+%下述段落为官方注意事项，写作时注意删除！
+
+\end{center}
+% to here
+
+
+%生成随机段落,写作时删除这排语句即可！
+% 当今时代，植物工厂逐渐替代温室，走向了工业化制造的过程中。植物工厂可以为植物生长提供更加可靠和安全的养分供给，从而为产出的植物提供更多丰富的养分，得到更加富有营养的产品
+
+
+% 但是，当今植物工厂的养分供给较为复杂，对于不同的植物品类，需要不同的养分供给，同时植物工厂提供的养料也较为繁琐，不但包括基本的光照水分，同时也要考虑二氧化碳，空气成分，加热次数，光照时间等等因素。因此我们在本篇论文中，以生菜的生长为例，提供了基本的模型供分析参考。
+
+
+% 在模型1中，我们得到了基本的单个生菜生长鲜重模型。我们提供了考虑了最基本的因素：光照强度与温度。通过综合考虑光照强度与温度，并将其他参数，例如二氧化碳浓度，含水量等等作归一化处理，我们得到了基于光照强度与温度的生菜生长鲜重模型，作为后续分析处理的基础。
+
+
+% 在模型2中，我们通过分析种植密度和收获策略，得到了基于20英尺集装箱空间的生菜年收获鲜量模型。该模型着重考虑了种植密度与收获策略两大因素的基本影响。
+
+
+% 在模型3中，我们加入了工厂的能耗温度，保温材料，朝向，种植密度和光照等因素，来进行工厂耗能的计算，针对人工照明强度和种植密度。在计算能耗时，我们忽略了通风，根据空调的性能指数(COP)讲一个工厂的负荷转换为用电量。
+
+
+% 在之后的细节分析中，我们综合以上模型，得到了最终可以预测生菜重量和植物工厂能耗的模型。该模型通过综合分析种植密度，朝向，光照，照明强度等多种因素。我们根据该模型分析，得到了适宜生长的模型
+In today's era, \textbf{plant factories} are gradually replacing greenhouses in the process of industrial manufacturing. Plant factories can provide a more reliable and safe nutrient supply for plant growth, thus providing more nutrient-rich plants and more nutritious products for the output.
+
+
+However, the supply of nutrients in today's plant factories is complex, requiring different nutrient supplies for different plant species, and the nutrients provided by plant factories are also complex, including not only basic light and water, but also carbon dioxide, air composition, heating times, light duration, and other factors. Therefore, in this paper, we provide the basic model for the analysis of lettuce growth as an example.
+
+
+\textbf{In model 1}, we obtained the basic fresh weight model for the growth of individual lettuce. We provided the most basic factors considered: light intensity and temperature. By combining light intensity and temperature, and \textbf{normalizing} other parameters \textbf{such as CO2 concentration, water content, etc.}, we obtained the light intensity and temperature-based lettuce growth weight model as the basis for subsequent analytical treatments.
+
+
+\textbf{In Model 2}, we obtained a model of the annual fresh weight of lettuce harvest based on a 20-foot container space by analyzing planting density and harvesting strategy. The model focused on the basic effects of two major factors, \textbf{planting density and harvesting strategy.}
+
+
+\textbf{In Model 3}, we added the plant energy consumption temperature, insulation material, orientation, planting density, and light to \textbf{perform the calculation of plant energy consumption}, for artificial lighting intensity and planting density. In calculating energy consumption, we ignore ventilation and convert a plant load into electricity consumption based on the performance index (COP) of air conditioning.
+
+
+In the subsequent detailed analysis, we combined the above models to obtain a final model about \textbf{plant factory} that can predict lettuce weight and plant energy consumption. The model was developed by combining various factors such as \textbf{planting density, orientation, light, and lighting intensity.} Based on this model analysis, we obtained \textbf{the model of suitable growth}.
+
+Numerous sources were consulted in the process of refining this article. \textbf{Task 4} required us to analyze the resource management flow and overall energy distribution of the plant. Our model is highly scalable and can be adapted very well to a wide range of influences. These include, but are not limited to, light hours, ventilation resources, etc. All of these factors can be embedded in our model to perfect the analysis of the annual fresh weight of the lettuce plots within a certain space and \textbf{Energy Estimation}. 
+
+
+We can add all these influencing factors to the calculation of the model and consider that some relevant factors are specified, injecting harvesting strategies, planting density, etc. These strategies are specified from numerous references. These are mentioned at the end of the article. For the calculation of annual fresh weight, our model calculation with \textbf{Dynamic Programming}, has a high similarity with the supporting data of the relevant papers. This is a testament to the high accuracy of the model.Also, for \textbf{Task 5} we chose energy efficient fans to complete the plant production and environment in the plant. All this proves that our model is highly scalable of \textbf{normalization}. We demonstrated the energy-saving potential of the plant by using fans with \textbf{up to 60\% efficiency}.
+
+
+%关键词
+\vspace{0.4cm}
+\noindent \textbf{Keywords:}\quad Plant Factory \quad Energy Estimation \quad Dynamic Programming \quad Normalization
+%%%%%%%%%%% End Summary %%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagestyle{fancy}
+% Uncomment the next line to generate a Table of Contents
+%\tableofcontents 
+\newpage
+\setcounter{page}{1}
+\rhead{Page \thepage~of~16}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%目录
+\tableofcontents
+
+
+
+\newpage
+
+%正文部分
+\input{body/section1.tex}
+\input{body/section2.tex}
+\input{body/section3.tex}
+\input{body/section4.tex}
+\input{body/section5.tex}
+\input{body/section6.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+\end

@@ -1,0 +1,125 @@
+\section{Assumptions and Notations}
+
+\subsection{Assumptions}
+
+\begin{itemize}
+    \item \textbf{Task1: }
+    
+    Provide a growth model describing the fresh weight of individual lettuce as a function of light intensity and temperature.
+  
+    \textbf{Justifications:}
+    
+    \begin{comment}
+        任务要求我们分析单个生菜的生长鲜重。因此模型的最终因变量为生菜的鲜重。同时该任务要求我们分析两个因素，分别为光照和温度。我们根据常识猜测，光照与温度两个因素相关性较小，而根据相关文献，我们发现两者处于弱相关，这与我们的猜想符合的很好。因此我们分别假设光照和温度的影响函数相互独立，并在计算鲜重时将其相乘从而进行相关性计算。根据相关数据，我们进行了拟合和归一化计算，得到了最终模型。和测试数据符合的很好。
+    \end{comment}
+
+    The task required us to analyze the fresh weight of individual lettuce growth. Therefore the final dependent variable of the model is the fresh weight of lettuce. The task also required us to analyze two factors, namely light and temperature. We guessed based on common sense that the two factors, light and temperature, are less correlated, and based on the relevant literature, we found that they are in a weak correlation, which is in good agreement with our guess. Therefore, we assumed that the effect functions of light and temperature were independent of each other, respectively, and multiplied them in the calculation of fresh weight thus performing the correlation calculation. Based on the correlation data, we performed the fitting and normalization calculations to obtain the final model. It fits well with the test data.
+    
+    \item \textbf{Task2: }
+    
+    Considering the planting density and harvesting strategy, please give a model to depict the annual fresh weight of harvested lettuce that can be yielded in the space of a 20-foot container. Assume that the climatic parameters are consistent with the external environment, and the light can be uniformly distributed in the inner area. Lettuce can be harvested when its weight reaches between 250 g and 500 g.
+  
+    \textbf{Justifications:}
+    
+    \begin{comment}
+        任务要求我们分析一定尺寸的集装箱内生菜生长的年鲜重。我们在任务一中已经得到了单个生菜生长的基本模型，在这里对任务1中的模型进行再次利用即可。我们对单个个体的吸收资源和土地的总资源进行假设，因此可以得出适宜的种植密度，该密度也和工厂的面积相关，该面积为常熟。当密度较小时，我们认为每个个体达到自身吸收的最大值，而当密度较大时，个体吸收资源相同，均分总资源。由此我们可以得到吸收资源与种植总密度的关系，结合任务一中的模型，就可以得到最终的年鲜重模型。
+    \end{comment}
+
+    The task requires us to analyze the annual fresh weight of lettuce grown in a container of a certain size. We have already obtained the basic model for the growth of individual lettuce in Task 1, and it is sufficient to reuse the model from Task 1 here. We make assumptions about the absorption resources of individual individuals and the total resources of the land, so that we can derive a suitable planting density, which is also related to the area of the plant, which is constant. When the density is small, we consider that each individual reaches the maximum of its own absorption, while when the density is large, the individual absorption resources are the same and the total resources are equally divided. From this we can obtain the relationship between the absorbed resources and the total planting density, and combined with the model in Task 1, we can obtain the final annual fresh weight model.
+    
+    \item \textbf{Task3: }
+    
+   Considering the energy consumption in a 20-foot container plant factory. Please develop: 
+    \begin{itemize}
+       \item[$\diamond$]A model for calculating annual air conditioning energy consumption of a container factories plant as a function of temperature, insulation material (Appendix B), orientation, planting density, and duration of photo-/dark period (for lettuce, 16h for photo-period and 8h for a dark period); and
+       \item[$\diamond$]A model for calculating the lighting energy consumption of a container factories plant as a function of the intensity of the artificial lighting and planting density.
+    \end{itemize}
+
+
+  
+    \textbf{Justifications:}
+    
+    \begin{comment}
+        任务要求我们分析工厂的能耗。工厂的能耗可以综合考虑为热量损耗，包括热量产生和热量浪费。热量产生主要有照明耗热和空调耗热，而后者并没有在此任务中要求，而是在任务四和五中进行计算分析。热量浪费主要是材料导热。分析热量产生的过程，我们可以假定一定的照明时间和工厂所需要的摄氏温度。同时，我们也要考虑外界的温度和材料的导热能力。材料的导热能力主要是材料密度，热导率和比热容三个因素。需要注意的是，我们的工厂是一个长方体，因此我们也要考虑工厂与南北纬度的夹角。至此，我们已经总结了工厂的主要能耗因素。工厂照明时，我们对照明灯光强进行假设，即可完成能量损耗的分析模型。我们再次进行了一个基本假设，即工厂先因其他条件到达一个温度，而后在不考虑其他影响下空调单独工作使温度到达预设温度，所以空调消耗可视作以一天为一个单位。
+    \end{comment}
+
+    The task requires us to analyze the energy consumption of the plant. The energy consumption of a factory can be considered as a combination of heat loss, including heat generation and heat waste. Heat generation is mainly lighting heat consumption and air conditioning heat consumption, while the latter is not required in this task, but is calculated and analyzed in tasks 4 and 5. Heat wastage is mainly material heat conduction. To analyze the process of heat generation, we can assume a certain lighting time and the required Celsius temperature of the plant. Also, we have to consider the outside temperature and the thermal conductivity of the material. The thermal conductivity of the material is mainly three factors: material density, thermal conductivity and specific heat capacity. It is important to note that our plant is a rectangle, so we also have to consider the angle of the plant to the north and south latitudes. At this point, we have summarized the main energy consumption factors of the factory.The analytical model of energy loss is completed by making assumptions about the light intensity of the lighting when lighting the plant. Again, we make a basic assumption that the plant reaches a temperature first due to other conditions, and then the air conditioner works alone to reach a preset temperature without considering other effects, so the air conditioner consumption can be considered as a unit of one day.
+    
+    
+    \item \textbf{Task4 \& 5: }
+    \begin{itemize}
+         \item[$\diamond$]Based on the models obtained from the above questions, please build a model that can predict the energy consumption per fresh weight of lettuce. Describe how the energy consumption per yield is affected by the design factors, such as planting density, lighting intensity, temperature, insulation materials, orientation, and duration of a photo-/dark period. Please offer an optimal design and operational strategy to balance yield and energy consumption.
+    
+        \item[$\diamond$]One proposed solution to reduce the energy consumption of air conditioners is to use ventilation when the external climate conditions are suitable. Because natural ventilation is unstable, mechanical ventilation driven by a fan can be applied. The energy consumption of mechanical ventilation is related to the ventilation rate provided by the fan and is usually much lower than that of an air conditioner. The maximum air change rate of mechanical ventilation can be assumed as two times per hour. Please develop a model to determine the operation strategy for mechanical ventilation and evaluate its energy-saving potential.
+    \end{itemize}
+    
+    \textbf{Justifications:}
+    
+    \begin{comment}]
+    任务四要求我们考虑工厂的照明损耗，并根据能耗的情况选择相应的材料。而根据我们前面的基本模型，可以较为轻松的应用在这两个人物之中。我们假定照明的时间，并在照明函数中进行自变量的扩展，从而轻松得到全新的险种计算函数。为了平衡产量和能源消耗，我们假定二者的权重一样，从而可以根据任务三的模型计算出相应的变量，得到最终的结果演示。任务五要求我们考虑工厂的能量情况，并考虑机械通风的利用度。我们考虑了机械通风的协调性和资源的情况，可以轻松地分析最终的节能潜力。
+    \end{comment}
+    
+    Task 4 requires us to consider the lighting losses of the factory and to choose the appropriate materials according to the energy consumption. And according to our previous basic model, it can be applied to both characters with relative ease. We assume the timing of lighting and extend the independent variables in the lighting function to easily obtain a completely new risk calculation function. To balance production and energy consumption, we assume the same weights for both, so that we can calculate the corresponding variables according to the model of task three and get a demonstration of the final results. Task V requires us to consider the energy profile of the plant and to consider the degree of utilization of mechanical ventilation. We consider the coordination of mechanical ventilation and the resources, and can easily analyze the final energy saving potential
+
+
+\end{itemize}
+
+
+
+\subsection{Notations}
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{ccc}
+			\toprule[1.5pt]
+			Symbol&Definition&Unit\\
+			\midrule[1pt]
+			\(m\)&Individual lettuce final fresh weight&g\\ 
+			\(T\)&Temperature of a single lettuce &℃\\
+			\(l\)&light intensity&cd\\
+			\(S\)&Total land resources&J\\
+			\(s_0\)&Land resources absorbed by a single individual&J\\
+			\(\rho\)&planting density&tree/$m^2$\\
+			\(c\)&Area of the factory&$m^2$\\
+			\(T_0\)&Required temperature of lettuce&℃\\
+			\(\rho(n)\)&Material density&kg\cdot{$m^{-3}$}\\
+			\(\lambda(n)\)&Thermal conductivity&{W\cdot$m^{-2}$\cdot$K^-1$}\\
+			\(c(n)\)&Specific heat capacity&{kJ\cdot$kg^{-1}$\cdot$K^{-1}$}\\
+			\(m(n)\)&Total mass of container&kg\\
+			\(V\)&The Volume of container shell&$m^3$\\
+			
+			\(p_0\)&Power required for the lamp to provide 1cd light intensity&W\cdot$h^{-1}$\\
+			\(E\)&Total required energy&J\\
+            \(W_1\)&The energy exchanged by container and outside air&J\\
+            \(W_2\)&The lamp lighting power&J\\
+            \(q_0\)&The heat required to increase 1 ℃ per cubic meter of air&J\\
+            \(T_1\)&The outside temperature&℃\\
+            \(Q_{out}\)&The total energy that the container absorbed&J\\
+            \(Q_{sun}\)&The energy that the container absorbed from the sun&J\\
+            \(Q_{light}\)&The energy that the container absorbed from the lights&J\\
+
+            
+			\bottomrule[1.5pt]
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[h]
+    \begin{center}
+        \begin{tabular}{ccc}
+        \toprule[1.5pt]
+			Symbol&Definition&Unit\\
+			\midrule[1pt]
+            \(S_e\)&The effective area of solar irradiation&$m^2$\\
+            \(q_1\)&The heat per unit area of the sum hitting the earth&J\\
+            \(S_0\)&The factory area&$m^2$\\
+            \(y\)&Wall thickness of the container&m\\
+            \(T_2\)&The temperature of the outer surface of the factory&℃\\
+            \(P_{static}\)&Fan resting power&W\\
+            \(P_{dynamic}\)&Fan movement power&W\\
+            \bottomrule[1.5pt]
+    \end{tabular}
+    \end{center}
+\end{table}
+% 这一部分是表格，我们在这里罗列我们写的参数，需要列一下
+% 如果时间充裕，列一下数据，另外起一个subsection

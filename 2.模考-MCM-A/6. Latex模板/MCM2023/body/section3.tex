@@ -1,0 +1,44 @@
+\section{Model}
+\lipsum[1-4]
+
+\subsection{Equations}
+
+%数学公式：
+This is an equation:$$\frac{x}{y}=\frac{\sqrt[3]{x}}{\ln a}$$
+
+This is an equation with number:(Heat Equation)\ref{e1}
+\begin{equation}\label{e1}
+	c\rho\frac{\partial u}{\partial t}=k\nabla^2u+f
+\end{equation}
+
+Matrix:
+$$
+\left( \begin{matrix}
+1&		2&		3&		4\\
+a&		b&		c&		d\\
+x&		y&		z&		w\\
+\alpha&		\beta&		\gamma&		\varphi\\
+\end{matrix} \right) 
+$$
+
+Integral:
+
+$$
+\oint_l{pdx+qdy+rdz}
+$$
+
+Some Equation:
+\begin{align*}
+\cosh x = \frac {1}{2} (e^x + e^{-x}) &= \sum_{n = 0}^{\infty} \frac {x^{2n}}{(2n)!} \\
+\sinh x = \frac {1}{2} (e^x - e^{-x}) &= \sum_{n = 0}^{\infty} \frac {x^{2n + 1}}{(2n + 1)!} \\
+e^x &= \sum_{n = 0}^{\infty} \frac {x^n}{n!} = \lim_{n\to\infty} \left (1+\frac{x}{n} \right )^n\\
+\end{align*}
+
+\subsection{Figures}
+This is a figure\ref{fig:comap-logo}:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"figure/comap logo"}
+	\caption{Comap logo}
+	\label{fig:comap-logo}
+\end{figure}

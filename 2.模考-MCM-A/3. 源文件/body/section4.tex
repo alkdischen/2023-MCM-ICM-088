@@ -1,0 +1,36 @@
+\section{Extend Our Model}
+
+
+%%%%%%%
+%我们任务一中的模型中选取的是比较小范围的温度来进行模型的拟合，因为上海崇明岛是属于亚热带季风性气候，因此全年的温差不大，大部分时候的温度集中在10摄氏度到30摄氏度内。不过如果考虑到可能在冬季的零下低温和夏季的高温对植物中各种酶的损伤，从而导致的后续植物生长的变缓甚至停滞，本模型就没有涉及对这一方面的讨论；不过由于我们后来要研究的是在集装箱内的植物生长模型，那么这一不足就显得无关紧要了。对于光照也是同样的道理，讨论适宜范围的光照强度即可。   
+%任务二中，我们考虑了单个个体吸收的土地资源，因为单个个体受到单株土地占有量（即总土地面积除以种植密度）的影响并非线性关系，因此需要先把这种影响单独拿出来进行分析。当然，对于不同的土地或者培养皿其对应的函数是不一样的，我们这里是选了一种特定的培养环境进行分析；如果有更换培养环境的需要则可以进一步分析：如不使用土地栽培而是用培养皿分瓶栽培，那么这里对于种植密度的讨论就只局限于光照竞争而不考虑营养成分竞争了，当然土地培养和培养皿培养本身的成本就有不同，这里我们还是选用成本较低的土地培养。同时在本模型中我们考虑的是使得在收获100-200g生菜的条件下的最大收获量，那么对于蔬菜的品质、口味就没有过多的考虑：当然了，如果在某一个生长阶段的生菜口味较好，容易出售的话，我们也可以据此调整收获时间。
+
+%在任务三中，我们终于引入了温控和光控系统对于集装箱的温度的调节。此时的光强和温度都是根据模型一里的最优值进行设定的；当然，对于植物来说，适宜的温度和光强不只有一组数值，而是一个范围，因此如果对降低能源损耗有着更高的要求，那么我们可以给温度设定一个区间值，比如低温的时候让箱内温度大于等于一个最小值，高温的时候让温度小于等于一个最大值，如果外部气温处于该温度区间则可以减少甚至停止空调的使用。本次的集装箱使用的是不透光的集装箱，因而生菜所需光照均由内部灯光解决：如果考虑使用玻璃外壳集装箱，那么光照的耗能就会相应地减少，但是在高温暴晒天气下的调温功率就会显著上升。考虑到空调的耗电远高于电灯的耗电，那么我们还是尽量以增加光照能耗为代价去尽量减少空调的能耗，因而不使用透明集装箱。
+
+%%%%%%%
+%Task 1
+\begin{itemize}
+    \item \textbf{Model I:}
+    
+    The model in \textbf{Task 1} was fitted to a relatively small range of temperatures because Chongming Island, Shanghai, has a subtropical monsoonal climate, so there is little temperature difference throughout the year, with most of the time the temperature ranges from 10 to 30 degrees Celsius.
+
+    However, if we consider the possible damage to various enzymes in the plants due to subzero temperatures in winter and high temperatures in summer, which may slow down or even stagnate the subsequent plant growth, this aspect is not discussed in this model; however, since we will later study the plant growth model in containers, this deficiency is irrelevant. The same holds for light, and it is sufficient to discuss the appropriate range of light intensities. 
+    
+    \item \textbf{Model II:}
+    
+    In \textbf{Task 2}, we considered the land resources absorbed by individual individuals, because the influence of individual individuals by the amount of land occupied by a single plant (i.e., a total land area divided by planting density) is not linearly related, so this influence needs to be taken out separately for analysis first. Of course, the corresponding function is different for different land or Petri dishes, and we have chosen a specific cultural environment for analysis here; if there is a need to change the cultural environment, then further analysis can be done: if instead of land cultivation, Petri dishes are used for vial cultivation, then the discussion of planting density here is limited to light competition without considering the nutrient competition. 
+
+    Of course, the cost of land culture and Petri dish culture itself is different, so here we still choose the lower cost of land culture. Also in this model, we consider the maximum harvest volume under the condition of harvesting 100-200g of lettuce, so we do not consider too much about the quality and taste of the vegetables: of course, if the lettuce is at a certain growth stage tastes better and is easy to sell, we can adjust the harvest time accordingly.
+    
+    \item \textbf{Model III:}
+    
+    %Task 3
+    In \textbf{Task 3}, we finally introduced the temperature control and light control system for the regulation of the container temperature. At this time, the light intensity and temperature are set according to the optimal values in Model 1; of course, for plants, the appropriate temperature and light intensity is not just a set of values, but a range, so if there are higher requirements for reducing energy losses, then we can set an interval value for the temperature, such as low temperature so that the temperature inside the box is greater than or equal to a minimum value, a high temperature so that the temperature is less than or equal to A maximum if the external temperature is in the temperature range can reduce or even stop the use of air conditioning.
+    
+    The container used in this case is opaque, so the light required for lettuce is solved by the internal light: if we consider using a glass shell container, the energy consumption of light will be reduced accordingly, but the power of temperature regulation will be significantly increased in hot and sunny weather. Considering that the power consumption of air conditioning is much higher than the power consumption of electric lights, then we still try to increase the energy consumption of light at the expense of minimizing the energy consumption of air conditioning, and therefore do not use transparent containers.
+    
+\end{itemize}
+  
+
+%Task 2
+
