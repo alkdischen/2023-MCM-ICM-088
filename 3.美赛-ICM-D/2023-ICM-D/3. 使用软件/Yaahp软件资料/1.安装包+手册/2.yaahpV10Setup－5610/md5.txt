@@ -1,0 +1,2 @@
+10.1.5610.1378
+MD5 (yaahpSetup.exe) = 918fbb0479495c4ea1281d62b09c082b

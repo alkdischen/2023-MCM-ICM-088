@@ -1,0 +1,178 @@
+%-------这是COMAP公司发布的2023年美赛官方LaTeX模板
+%-------官方仅提供了summary页面的样式，在此基础上，我们构建一个完整的Template!
+%-------下载网站：https://www.comap.com/contests/mcm-icm
+%-------E-mail:hnuzyx@outlook.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MCM/ICM LaTeX Template %%
+%% 2023 MCM/ICM           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{xeCJK}
+\usepackage{verbatim}
+
+
+\usepackage[dvipsnames]{xcolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{blindtext}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{svg} 
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[nottoc]{tocbibind}
+\usepackage{pgfplots}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usetikzlibrary{trees}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{indentfirst}%Latex默认在\chapter和\section等章节标题首段不缩进，加入这个宏包可以解决这个问题
+%\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{listings}
+% \begin{lstlisting}[language=TeX]
+\lstset{
+    basicstyle=\sffamily, % 基本代码风格
+    keywordstyle=\bfseries, % 关键字风格
+    commentstyle=\rmfamily\itshape, % 注释的风格，斜体
+    stringstyle=\ttfamily, % 字符串风格
+    flexiblecolumns=true, % 别问为什么，加上这个
+    numbers=left, % 行号的位置在左边
+    showspaces=false, % 是否显示空格，显示了有点乱，所以不显示了
+    showstringspaces=false,
+    captionpos=t, % 这段代码的名字所呈现的位置，t指的是top上面
+    frame=lrtb, % 显示边框
+    breaklines=true,
+    columns=flexible,
+}
+
+
+\lstdefinestyle{Python}{
+    language        =   Python, % 语言选Python
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}
+\geometry{left=1in,right=0.75in,top=1in,bottom=1in}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lhead{Team \Team}
+\rhead{}
+\cfoot{}
+% Replace ABCDEF in the next line with your chosen problem
+% and replace 1111111 with your Team Control Number
+\newcommand{\Problem}{D}
+\newcommand{\Team}{2321591}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\graphicspath{{.}}  % Place your graphic files in the same directory as your main document
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
+\thispagestyle{empty}
+\vspace*{-16ex}
+\centerline{\begin{tabular}{*3{c}}
+	\parbox[t]{0.3\linewidth}{\begin{center}\textbf{Problem Chosen}\\ \Large \textcolor{red}{\Problem}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{2023\\ MCM/ICM\\ Summary Sheet}\end{center}}
+	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Team Control Number}\\ \Large \textcolor{red}{\Team}\end{center}}	\\
+	\hline
+\end{tabular}}
+%%%%%%%%%%% Begin Summary %%%%%%%%%%%
+% Enter your summary here replacing the (red) text
+% Replace the text from here ...
+\begin{center}
+%标题
+\begin{center}
+	\Huge {Multi-Criteria Decision Making for SDGs using K-Means and AHP}
+	\vspace{0.4cm}
+	
+	\normalsize\textbf{Summary}
+\end{center}
+\vspace{0.2cm}
+
+%下述段落为官方注意事项，写作时注意删除！
+
+\end{center}
+% to here
+
+
+
+The United Nations has established \textbf{17 Sustainable Development Goals (SDGs)}, which represent humanity's vision for a better future world. These 17 goals may have \textbf{positive or negative impacts} on each other, and therefore, it is crucial to establish a prioritization model for handling these goals. To accomplish this, we require a model that involves both \textbf{network and graph theory} and a model that can determine the most prioritized items.
+
+In Task 1, we constructed a \textbf{network graph} of the 17 SDGs, where we assigned the same color to points representing goals belonging to the same category and used lines to indicate their relationships. To avoid the intersection of points and lines, we let the 17 targets form a circle, so that our diagram will look clearer.
+
+In Task 2, we used the traditional \textbf{Analytic Hierarchy Process (AHP)} method to establish a model for selecting the optimal goal from the 17 SDGs. First, we provided 5 criteria for evaluating the goals as the decision layer, and then the 17 SDGs as the alternative layer. By comparing the judgment matrices through the \textbf{AHP algorithm}, we obtained the evaluation weights of the 5 criteria and the priority levels (represented by numerical values) of each goal. The goal with the highest priority value was considered the most prioritized item.
+
+In Task 3, we aimed to determine the new most prioritized item after a particular goal had been accomplished. Considering that the traditional AHP method would result in complicated operations and substantial human input, and that removing a goal would require changing the parameters of the original matrix, we used the \textbf{K-Means clustering algorithm} to classify the 17 goals. After classifying the goals, we placed goals from the same class in the same\textbf{ AHP alternative layer}, and each class's local most prioritized item was determined. Finally, we included these local most prioritized items in the\textbf{ AHP model }to determine the overall most prioritized item.
+
+In Task 4, due to unexpected events, we realized that the original decision layer might no longer be appropriate, so we replaced it with the United Nations' official \textbf{5P classification} for the 17 SDGs to adapt to the new situation. The other procedures were similar to those in Task 3. Here we discuss what happens to the 5Ps, which are indicators at the decision-making level, when economic, technological, political, and environmental factors change; we also plot pie charts comparing these changes to the original state.
+
+In Task 5, we discussed in detail what kind of problems other companies and organizations can solve using our model and how to solve them using our model. We also considered other situations that might arise in practical problems, and therefore, we provided optimization suggestions for these situations.
+
+Finally, we conducted sensitivity analysis, analyzed the strengths and weaknesses of the model, and provided prospects for the model's future development.
+
+
+\begin{comment}
+
+联合国制定了17项可持续发展目标，它们代表着人类对于未来世界的美好愿景。这17项目标相互之间可能有着影响，积极的或者是消极的。处理这些目标需要有一个先后顺序，那么确定最为优先的事项就显得尤为重要。因此我们需要一个有关图与网络的模型和一个能够确定最优先事项的模型。
+
+在任务一中，我们构建了一个关于17个可持续发展目标的网络图，在这个图中我们根据17个目标的分类，给相同的目标所代表的点涂上一样的颜色，并且使用连线来表示他们相互之间的关系。为了避免出现点与线的交错，我们让这17个目标围成一圈，这样子我们的图看起来就会比较清楚。
+
+在任务二中，我们使用传统的AHP方法来构建从17个目标中取得最优目标的模型。首先我们给定了5个评价目标的标准作为AHP的决策层，然后17个目标作为方案层。这样子通过AHP的比较判别矩阵的算法来求解出5个评价标准的评价权重以及每个目标的优先程度（通过数值来表示），这样子优先程度数值最高的就成为了优先考虑事项。
+
+在任务三中，我们需要考虑如果某个目标被完成之后，新的最优先事项是什么。考虑到传统的AHP方法会带来比较繁琐的运算和庞大的人为赋值，同时一个目标被移除会导致原矩阵的参数需要变动，因此我们使用K-Means聚类算法来进行17个目标的分类。分好类之后我们将同类的目标放进AHP的方案层里面，不同的目标不同时放进，这样子每一类的局部最优先事项就可求出。最后再将这些局部最优先事项放进AHP中，得到最优的事项。
+
+在任务四中，由于出现了一些突发事件，因此我们考虑到原先的决策层可能不再适用，因此我们选择将原来的决策层更换为联合国官方为17个目标做的分类5Ps，这样子就可以适应于新的情境。而其他的操作和任务三差不多。在这里我们讨论了当经济、科技、政治、环境因素发生变化的时候，作为决策层指标的5Ps会发生什么变化；同时我们将这些变化与原先状态下进行比对，绘制了饼图。
+
+在任务五中，我们详细讨论了其他的公司和组织可以通过我们的模型解决什么样的问题，如何通过我们的模型解决问题。同时我们考虑到实际的问题中可能会出现的其他的情况，因此后面对于任务5的表述中也会提到对于这一种情况我们提出了什么样的优化建议。
+
+最后，我们进行了灵敏度分析，同时分析了模型的优缺点，最后进行了对于该模型的未来展望。
+
+\end{comment}
+
+
+
+%关键词
+\vspace{0.4cm}
+\noindent \textbf{Keywords:}\quad 17 SDGs \quad Graph and Network \quad Analytic Hierarchy Process(AHP) \quad K-Means cluster algorithm \quad 5P classification
+%%%%%%%%%%% End Summary %%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagestyle{fancy}
+% Uncomment the next line to generate a Table of Contents
+%\tableofcontents 
+\newpage
+\setcounter{page}{1}
+\rhead{Page \thepage~of~25}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%目录
+\tableofcontents
+\newpage
+
+%正文部分
+\input{body/section1.tex}
+\input{body/section2.tex}
+\input{body/section3.tex}
+\input{body/section4.tex}
+\input{body/section5.tex}
+\input{body/section6.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+\end
