@@ -22,6 +22,8 @@ CANVAS MCM 课程汇总： https://oc.sjtu.edu.cn/courses
 1.  Origin
 2.  Pyton.PLT
 3.  Matlab.plt
+4.  Echarts
+5.  Excel
 
 ## 3. 仓库内容
 
